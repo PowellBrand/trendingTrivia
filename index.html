@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="triviaTrend">
+<html ng-app="triviaTrends">
 
 <head>
   <meta charset="utf-8">
@@ -15,9 +15,10 @@
     <h1>Trivia Trends</h1>
     <button><span>+</span> Add Question</button>
   </header>
+  <ui-view></ui-view>
   <article>
     <nav>
-      <a>All Questions</a>
+      <a ui-sref="allQ">All Questions</a>
       <a>Easy</a>
       <a>Medium</a>
       <a>Hard</a>
@@ -82,6 +83,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
   <script src="./app.js" charset="utf-8"></script>
+
+  <script src="app/allQ/allQCtrl.js"></script>
 </body>
 
 </html>
